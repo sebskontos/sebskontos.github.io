@@ -10,14 +10,28 @@ const Projects = () => (
     <div className="flex flex-col gap-8">
 
       <Card
+        title="Boys Behind The Bar"
+        description="[In Development] A full-stack web application for a mobile 
+        bartending company, featuring a modern, responsive design. The platform 
+        combines a customer-facing interface for service bookings, cocktail menu 
+        browsing, and review management with a robust admin CRM system for 
+        business operations. Built with industry best practices and deployed on 
+        AWS infrastructure."
+        technologies={["React", "Node.js", "Express.js", "AWS EC2", "AWS RDS", "Tailwind CSS", "PostgreSQL"]}
+        objectFit="contain"
+      />
+
+      <Card
         image="/bbtb.png"
-        title="Swift & SwiftUI Projects"
-        description="Currently building a suite of iOS applications to self-learn 
-        Swift and SwiftUI. My latest project is a booking app for a mobile 
-        bartending service, enabling customers to seamlessly schedule and manage 
-        their bookings through the app."
+        title="Bartender Booking App"
+        description="A custom iOS application built for a mobile bartending company. 
+        The app streamlines the event booking process, allowing customers to 
+        easily schedule and manage their bartending services. 
+        Features a dual-interface system with a customer-facing booking 
+        platform and a specialized admin portal for bartenders to confirm 
+        reservations and manage their events."
         githubLink="https://github.com/sebskontos/BoysBehindTheBar"
-        technologies={["Swift", "SwiftUI", "XCode"]}
+        technologies={["Swift", "SwiftUI", "XCode", "Firebase"]}
         objectFit="contain"
       />
 
@@ -46,17 +60,17 @@ const Projects = () => (
         image="/harmonize.png"
         title="Harmonize"
         description="A full-stack music streaming web application. Developed and 
-        deployed on AWS with Nginx, Django, and Google OAuth 2.0 for secure 
+        deployed on an AWS EC2 instance with Nginx, Django, and Google OAuth 2.0 for secure 
         authentication."
         githubLink="https://github.com/sebskontos/Harmonize"
-        technologies={["Python", "Django", "CSS", "HTML", "AJAX", "AWS"]}
+        technologies={["Python", "Django", "CSS", "HTML", "AJAX", "AWS EC2"]}
       />
 
 
       <Card
         image="/space_invaders.png"
         title="Space Invaders Game"
-        description="Built a 2D game engine in Java to replicate Space Invaders, 
+        description="A 2D game engine in Java which replicates Space Invaders, 
         featuring enemy spawning, projectiles, collision detection, and game 
         state transitions. Leveraged OOP principles and design patterns like 
         Factory, Builder, and State."

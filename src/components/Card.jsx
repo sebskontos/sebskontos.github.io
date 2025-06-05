@@ -5,11 +5,13 @@ const Card = ({ image, title, description, githubLink, technologies, objectFit =
     {/* Thumbnail */}
     <div className="sm:col-span-2 flex-shrink-0">
       <div className="w-full h-36 md:h-40 overflow-hidden rounded-lg">
-        <img
-          src={image}
-          alt={title}
-          className={`w-full h-full object-${objectFit}`}
-        />
+        {image && (
+          <img
+            src={image}
+            alt={title}
+            className={`w-full h-full object-${objectFit}`}
+          />
+        )}
       </div>
     </div>
 
